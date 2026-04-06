@@ -4,24 +4,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>りり｜沼らせ専門占い師💋 — 恋愛鑑定（公式LINE）</title>
-  <meta name="description" content="彼の本音・2人の流れ・次の一手を霊視×星読み×タロットで。鑑定実績3000人以上。公式LINEで無料鑑定・本鑑定の申込み。">
+  <meta name="description" content="鑑定実績3000人以上。彼の気持ち・2人の流れ・動くタイミングと、沼らせの次の一手まで。霊視×星読み×タロット。公式LINEで無料鑑定から。">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --bg: #f0e4e8;
-      --bg-soft: #e8d6dc;
-      --bg-card: #fffbfc;
-      --bg-card-warm: #faf4f6;
-      --text: #2d2328;
-      --text-muted: #5c4e54;
-      --accent: #a83d5c;
-      --accent-hover: #8f3350;
-      --accent-soft: rgba(168, 61, 92, 0.12);
-      --eggplant: #3d2a32;
-      --gold: #9a7b52;
-      --border: rgba(61, 42, 50, 0.1);
+      --bg: #ebe4e8;
+      --bg-soft: #e2d8de;
+      --bg-card: #fdfcfd;
+      --bg-card-warm: #f7f2f4;
+      --text: #2a2226;
+      --text-muted: #5a4e52;
+      --accent: #8f3650;
+      --accent-hover: #7a2d45;
+      --accent-soft: rgba(143, 54, 80, 0.1);
+      --eggplant: #35282c;
+      --gold: #8b7355;
+      --border: rgba(53, 40, 44, 0.09);
       --max: 640px;
     }
 
@@ -39,8 +39,9 @@
       font-family: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", sans-serif;
       background: var(--bg);
       color: var(--text);
-      line-height: 1.9;
+      line-height: 1.92;
       font-size: 15px;
+      letter-spacing: 0.02em;
     }
 
     .mincho {
@@ -96,106 +97,74 @@
     }
 
     .top-bar a.primary {
-      background: #06c755;
-      border-color: #06b34c;
-      color: #fff !important;
+      background: var(--eggplant);
+      border-color: var(--eggplant);
+      color: #faf6f7 !important;
     }
 
     .top-bar a.primary:hover {
-      background: #05b34c;
+      background: var(--accent);
+      border-color: var(--accent);
     }
 
-    /* Hero */
+    /* Hero（中央・顔写真は About のみ） */
     .hero-wrap {
-      padding: 32px 22px 48px;
-      max-width: 960px;
+      padding: 28px 22px 44px;
+      max-width: 560px;
       margin: 0 auto;
-    }
-
-    .hero-split {
-      display: grid;
-      gap: 32px;
-      align-items: center;
-    }
-
-    @media (min-width: 768px) {
-      .hero-split {
-        grid-template-columns: 1fr 1.05fr;
-        gap: 48px;
-      }
-    }
-
-    .hero-visual {
       text-align: center;
     }
 
-    .hero-visual img {
-      width: 100%;
-      max-width: 340px;
-      height: auto;
-      border-radius: 16px;
-      border: 1px solid var(--border);
-      box-shadow: 0 16px 48px rgba(61, 42, 50, 0.12);
-      display: inline-block;
-      vertical-align: middle;
+    @media (min-width: 768px) {
+      .hero-wrap {
+        padding: 40px 22px 52px;
+        max-width: 580px;
+      }
     }
 
     .hero-copy {
-      text-align: left;
+      width: 100%;
     }
 
     .hero-badge {
-      display: inline-block;
       font-size: 11px;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      color: var(--accent);
-      background: var(--accent-soft);
-      padding: 6px 12px;
-      border-radius: 999px;
-      margin-bottom: 14px;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      color: var(--text-muted);
+      margin-bottom: 22px;
+      line-height: 1.7;
     }
 
     .hero-hook {
-      font-size: clamp(22px, 4.2vw, 30px);
-      font-weight: 700;
-      line-height: 1.45;
-      letter-spacing: 0.02em;
-      margin-bottom: 16px;
+      font-family: "Shippori Mincho", serif;
+      font-size: clamp(21px, 4.5vw, 28px);
+      font-weight: 600;
+      line-height: 1.55;
+      letter-spacing: 0.04em;
+      margin-bottom: 20px;
       color: var(--eggplant);
     }
 
-    .hero-hook em {
-      font-style: normal;
-      color: var(--accent);
+    .hero-lead {
+      font-family: "Shippori Mincho", serif;
+      font-size: clamp(16px, 3vw, 18px);
+      font-weight: 600;
+      color: var(--eggplant);
+      margin-bottom: 22px;
+      letter-spacing: 0.06em;
     }
 
     .hero-sub {
       color: var(--text-muted);
-      font-size: 15px;
-      line-height: 1.9;
-      margin-bottom: 22px;
-    }
-
-    .hero-points {
-      list-style: none;
-      margin-bottom: 24px;
-    }
-
-    .hero-points li {
       font-size: 14px;
-      color: var(--text);
-      padding: 8px 0 8px 1.35em;
-      position: relative;
-      border-bottom: 1px dashed var(--border);
+      line-height: 2;
+      margin-bottom: 18px;
+      text-align: center;
     }
 
-    .hero-points li::before {
-      content: "✓";
-      position: absolute;
-      left: 0;
-      color: var(--accent);
-      font-weight: 700;
+    .hero-sub--close {
+      margin-bottom: 28px !important;
+      color: var(--text);
     }
 
     .btn {
@@ -218,11 +187,13 @@
     }
 
     .btn-line {
-      background: #06c755;
+      background: var(--eggplant);
+      border: 1px solid var(--eggplant);
     }
 
     .btn-line:hover {
-      background: #05b34c;
+      background: var(--accent);
+      border-color: var(--accent);
     }
 
     .btn-ghost {
@@ -238,63 +209,74 @@
     .hero-btns {
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 12px;
+      align-items: center;
     }
 
     @media (min-width: 480px) {
       .hero-btns {
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
       }
     }
 
     .hero-note {
       font-size: 12px;
       color: var(--text-muted);
-      margin-top: 14px;
-      line-height: 1.65;
+      margin-top: 18px;
+      line-height: 1.75;
     }
 
-    /* LINE steps strip */
+    /* LINE（派手な緑は使わず、カードで上品に） */
     .line-strip {
-      background: linear-gradient(90deg, #e8f8ee 0%, #dff3e6 100%);
-      border-top: 1px solid rgba(6, 199, 85, 0.2);
-      border-bottom: 1px solid rgba(6, 199, 85, 0.15);
-      padding: 22px 22px 26px;
+      background: transparent;
+      padding: 8px 22px 32px;
       text-align: center;
     }
 
     .line-strip-inner {
-      max-width: 720px;
+      max-width: 520px;
       margin: 0 auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 24px 30px;
+      box-shadow: 0 8px 40px rgba(53, 40, 44, 0.06);
     }
 
     .line-strip h2 {
       font-family: "Shippori Mincho", serif;
-      font-size: 17px;
+      font-size: 18px;
+      font-weight: 600;
       color: var(--eggplant);
-      margin-bottom: 8px;
+      margin-bottom: 10px;
+      letter-spacing: 0.06em;
     }
 
     .line-strip p {
       font-size: 13px;
       color: var(--text-muted);
-      margin-bottom: 16px;
+      margin-bottom: 18px;
+      line-height: 1.85;
     }
 
     .line-steps {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 8px 16px;
-      font-size: 13px;
-      font-weight: 700;
-      color: var(--text);
-      margin-bottom: 18px;
+      gap: 6px 12px;
+      font-size: 12px;
+      font-weight: 500;
+      color: var(--text-muted);
+      margin-bottom: 22px;
+      line-height: 1.6;
     }
 
-    .line-steps span {
-      color: #06c755;
+    .line-steps .step-num {
+      color: var(--gold);
+      font-weight: 600;
+      margin-right: 2px;
     }
 
     /* Bio card */
@@ -307,9 +289,9 @@
     .bio-inner {
       background: var(--bg-card);
       border: 1px solid var(--border);
-      border-radius: 12px;
-      padding: 28px 22px;
-      box-shadow: 0 8px 32px rgba(61, 42, 50, 0.06);
+      border-radius: 16px;
+      padding: 30px 24px;
+      box-shadow: 0 6px 28px rgba(53, 40, 44, 0.05);
     }
 
     .bio-name {
@@ -388,6 +370,16 @@
       max-width: var(--max);
     }
 
+    .section-inner.narrow.head-center {
+      text-align: center;
+    }
+
+    .section-inner.narrow.head-center .for-you-list {
+      text-align: left;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
     .sec-label {
       font-size: 11px;
       letter-spacing: 0.28em;
@@ -459,15 +451,24 @@
 
     .why-card h3 {
       font-family: "Shippori Mincho", serif;
-      font-size: 15px;
-      margin-bottom: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      margin-bottom: 10px;
       color: var(--eggplant);
+      line-height: 1.5;
+    }
+
+    @media (min-width: 600px) {
+      .why-card h3 {
+        font-size: 15px;
+      }
     }
 
     .why-card p {
       font-size: 13px;
       color: var(--text-muted);
-      line-height: 1.75;
+      line-height: 1.85;
+      text-align: left;
     }
 
     /* About */
@@ -485,11 +486,19 @@
     }
 
     .about-photo {
-      margin: 0;
+      margin: 0 auto;
       border-radius: 14px;
       overflow: hidden;
       border: 1px solid var(--border);
       box-shadow: 0 12px 40px rgba(61, 42, 50, 0.1);
+      max-width: min(200px, 50vw);
+    }
+
+    @media (min-width: 768px) {
+      .about-photo {
+        margin: 0;
+        max-width: none;
+      }
     }
 
     .about-photo img {
@@ -501,8 +510,14 @@
 
     .about-text p {
       color: var(--text-muted);
-      margin-bottom: 16px;
+      margin-bottom: 18px;
       font-size: 14px;
+      line-height: 2;
+    }
+
+    .about-text p.about-close {
+      color: var(--text);
+      margin-bottom: 0;
     }
 
     /* Voices */
@@ -579,12 +594,12 @@
     .plan-card {
       background: var(--bg-card);
       border: 1px solid var(--border);
-      border-radius: 12px;
+      border-radius: 14px;
       padding: 26px 20px;
       display: flex;
       flex-direction: column;
       position: relative;
-      box-shadow: 0 6px 28px rgba(61, 42, 50, 0.06);
+      box-shadow: 0 4px 24px rgba(53, 40, 44, 0.05);
     }
 
     .plan-card.featured {
@@ -674,13 +689,13 @@
     .free-box {
       margin-top: 40px;
       background: var(--bg-card);
-      border: 2px solid rgba(6, 199, 85, 0.35);
-      border-radius: 12px;
-      padding: 28px 20px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 28px 22px;
       max-width: var(--max);
       margin-left: auto;
       margin-right: auto;
-      box-shadow: 0 8px 32px rgba(61, 42, 50, 0.06);
+      box-shadow: 0 8px 36px rgba(53, 40, 44, 0.07);
     }
 
     .free-box h3 {
@@ -769,8 +784,8 @@
     .cta-footer {
       text-align: center;
       padding: 64px 22px;
-      background: linear-gradient(165deg, #4a3540 0%, #2d2328 100%);
-      border-top: 1px solid var(--border);
+      background: linear-gradient(168deg, #3d2f35 0%, #2a2226 48%, #241c20 100%);
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
       color: #f5eef1;
     }
 
@@ -806,6 +821,14 @@
 
     .cta-footer .btn-line {
       min-width: 240px;
+      background: #f8f4f5;
+      color: var(--eggplant) !important;
+      border-color: #f8f4f5;
+    }
+
+    .cta-footer .btn-line:hover {
+      background: #ebe4e8;
+      border-color: #ebe4e8;
     }
 
     .cta-footer .btn-ghost {
@@ -839,44 +862,38 @@
   </nav>
 
   <header class="hero-wrap">
-    <div class="hero-split">
-      <div class="hero-visual">
-        <img src="riri-profile.png" width="680" height="850" alt="りり｜沼らせ専門占い師のプロフィール画像">
+    <div class="hero-copy">
+      <p class="hero-badge">鑑定実績3000人以上｜霊視 × 星読み × タロット</p>
+      <h1 class="hero-hook">その恋、まだ諦めなくていい💋</h1>
+      <p class="hero-lead">りりが、あなただけのために視る。</p>
+      <p class="hero-sub">
+        彼の気持ち、２人の流れ、動くべきタイミング。<br>
+        そしてあなたが彼を沼らせるための、具体的な次の一手まで。
+      </p>
+      <p class="hero-sub hero-sub--close">
+        ひとりで答えを探さなくていい。<br>
+        りりが全部、一緒に視るから💋
+      </p>
+      <div class="hero-btns">
+        <a href="https://lin.ee/Ws8t7oB" class="btn btn-line" target="_blank" rel="noopener noreferrer">公式LINEで相談する</a>
+        <a href="#plans" class="btn btn-ghost">鑑定メニューを見る</a>
       </div>
-      <div class="hero-copy">
-        <p class="hero-badge">霊視 × 星読み × タロット · 鑑定実績3000人以上</p>
-        <h1 class="hero-hook mincho">
-          迷う恋に、<em>ちゃんと答え</em>を。<br>りりがあなた専用で視る💋
-        </h1>
-        <p class="hero-sub">
-          彼のいまの気持ち、2人の流れ、動きやすいタイミング、そして<strong>あなたが取れる次の一手</strong>までをまとめてお渡しします。ひとりで抱え込まなくていいよ。
-        </p>
-        <ul class="hero-points">
-          <li>本音を丁寧に受け止めてから視くから、安心して相談できる</li>
-          <li>無料鑑定からでもOK。本気の本鑑定までメニューが選べる</li>
-          <li>断定はしない。いまの傾向と、前に進みやすいヒントをお届け</li>
-        </ul>
-        <div class="hero-btns">
-          <a href="https://lin.ee/Ws8t7oB" class="btn btn-line" target="_blank" rel="noopener noreferrer">公式LINEで無料鑑定を申し込む</a>
-          <a href="#plans" class="btn btn-ghost">有料メニューを見る</a>
-        </div>
-        <p class="hero-note">
-          まずは友だち追加だけでも大丈夫。LINEで「無料希望」と送ってね🌹
-        </p>
-      </div>
+      <p class="hero-note">
+        友だち追加後、無料鑑定・本鑑定のご希望をメッセージで送ってください。
+      </p>
     </div>
   </header>
 
   <div class="line-strip">
     <div class="line-strip-inner">
-      <h2 class="mincho">公式LINEの登録はここから</h2>
-      <p>タップで開いて、友だち追加するだけ。あとはメッセージでつながるよ。</p>
+      <h2 class="mincho">公式LINE</h2>
+      <p>下のボタンから友だち追加のうえ、ご希望の内容をメッセージでお送りください。</p>
       <div class="line-steps">
-        <span><span>①</span> 下のボタンをタップ</span>
-        <span><span>②</span> 友だち追加</span>
-        <span><span>③</span> 無料 or ①②③のメニューを送る</span>
+        <span><span class="step-num">①</span>ボタンをタップ</span>
+        <span><span class="step-num">②</span>友だち追加</span>
+        <span><span class="step-num">③</span>無料鑑定 or ①②③を送信</span>
       </div>
-      <a href="https://lin.ee/Ws8t7oB" class="btn btn-line" target="_blank" rel="noopener noreferrer">公式LINEを開いて友だち追加</a>
+      <a href="https://lin.ee/Ws8t7oB" class="btn btn-line" target="_blank" rel="noopener noreferrer">公式LINEを開く</a>
     </div>
   </div>
 
@@ -895,43 +912,43 @@
       <p class="bio-arrow">→溺愛されるあなたに導くサポート</p>
       <p class="bio-tools">霊視×星読み×タロットで鑑定🔮<br>鑑定実績3000人以上</p>
       <div class="bio-cta">
-        <a href="https://lin.ee/Ws8t7oB" class="btn btn-line" target="_blank" rel="noopener noreferrer">りりのLINEに登録する</a>
+        <a href="https://lin.ee/Ws8t7oB" class="btn btn-line" target="_blank" rel="noopener noreferrer">公式LINEはこちら</a>
       </div>
     </div>
   </div>
 
   <section>
-    <div class="section-inner narrow">
+    <div class="section-inner narrow head-center">
       <span class="sec-label">For you</span>
       <h2 class="mincho">こんな子、りりに任せて💋</h2>
       <ul class="for-you-list">
-        <li>彼の本音が知りたくて、夜も眠れない</li>
-        <li>このまま連絡していいのか、引くべきか判断したい</li>
-        <li>溺愛される側に回りたい。行動の順番を整えたい</li>
-        <li>占いは初めて。でもこの恋だけはちゃんと視てほしい</li>
+        <li>既読無視、未読無視…彼が何を考えてるのか全然わからない</li>
+        <li>連絡していいのか、引くべきなのか、ずっとループしてる</li>
+        <li>好きな気持ちはあるのに、なぜかいつも追われる側になれない</li>
+        <li>占いは初めてだけど、この恋だけは絶対に後悔したくない</li>
       </ul>
       <p style="text-align:center;margin-top:28px;">
-        <a href="https://lin.ee/Ws8t7oB" class="btn btn-line" target="_blank" rel="noopener noreferrer">まずはLINEで相談する</a>
+        <a href="https://lin.ee/Ws8t7oB" class="btn btn-line" target="_blank" rel="noopener noreferrer">公式LINEで相談する</a>
       </p>
     </div>
   </section>
 
   <section class="why-section">
     <div class="section-inner narrow">
-      <span class="sec-label">Why riri</span>
-      <h2 class="mincho" style="text-align:center;">りりの鑑定が選ばれる理由</h2>
+      <span class="sec-label" style="display:block;text-align:center;">Why riri</span>
+      <h2 class="mincho" style="text-align:center;">りりが選ばれる理由</h2>
       <div class="why-grid">
         <div class="why-card">
-          <h3>恋に特化</h3>
-          <p>沼らせ・溺愛の流れを、恋の現場目線で一緒に整理します。</p>
+          <h3>恋愛に完全特化</h3>
+          <p>片思い・復縁・音信不通・複雑な恋。りりが視るのは恋だけ。だから深く、鋭く読み解ける。</p>
         </div>
         <div class="why-card">
-          <h3>3種の術を併用</h3>
-          <p>霊視・星読み・タロットを組み合わせ、立体的に読み解きます。</p>
+          <h3>霊視 × 星読み × タロットの三重鑑定</h3>
+          <p>１つの術では見えない角度も、３つ重ねることで彼の本音と２人の流れが立体的に浮かび上がる。</p>
         </div>
         <div class="why-card">
-          <h3>無料から試せる</h3>
-          <p>お試しで流れを確かめてから、本鑑定に進めます。</p>
+          <h3>まず無料で試せる安心設計</h3>
+          <p>「いきなり有料は不安…」な子でも大丈夫。無料鑑定から、本鑑定に進めるよ💋</p>
         </div>
       </div>
     </div>
@@ -946,16 +963,25 @@
         <span class="sec-label">About</span>
         <h2 class="mincho">りりの鑑定スタイル</h2>
         <p>
-          恋は、気持ちが追いつかない日もある。でも<strong style="color:var(--text);">視えていないだけ</strong>でスッと軽くなることもある。
+          好きな人のことを考えすぎて、<br>
+          自分がどうしたいのかすらわからなくなってない？
         </p>
         <p>
-          だからりりは、まずあなたの話をちゃんと受け取るところから。鑑定では「絶対こうなる」とは言わないけれど、<strong style="color:var(--text);">いまの傾向</strong>と<strong style="color:var(--text);">動きやすいタイミング</strong>、<strong style="color:var(--text);">彼を沼らせるための具体的な行動</strong>まで、できるだけクリアにまとめるよ。
+          りりはまず、あなたの話をぜんぶ受け取る。<br>
+          そのうえで、彼の本音・２人が動くタイミング・<br>
+          あなたが彼を沼らせるための具体的な行動まで、<br>
+          できるだけクリアに、あなただけのために視ていく🖤
         </p>
         <p>
-          本気で変わりたい子は、<strong style="color:var(--text);">公式LINE</strong>から無料鑑定でも本鑑定でも、いつでもどうぞ🌹
+          「絶対こうなる」とは言わない。<br>
+          でも「次に何をすればいいか」は、必ず一緒に見つける。
         </p>
-        <p style="margin-top:20px;">
-          <a href="https://lin.ee/Ws8t7oB" class="btn btn-line" target="_blank" rel="noopener noreferrer">公式LINEで鑑定の相談をする</a>
+        <p class="about-close">
+          本気でこの恋を変えたいなら、<br>
+          まず公式LINEに来てね💋
+        </p>
+        <p style="margin-top:22px;">
+          <a href="https://lin.ee/Ws8t7oB" class="btn btn-line" target="_blank" rel="noopener noreferrer">公式LINEはこちら</a>
         </p>
       </div>
     </div>
@@ -968,21 +994,21 @@
       <div class="voice-scroll" role="region" aria-label="お客様の声">
         <article class="voice-card">
           <div class="initial">A</div>
-          <p class="voice-meta"><strong>A.K さん</strong> · 20代</p>
+          <p class="voice-meta"><strong>Aさん</strong> · 20代</p>
           <p class="stars">★★★★★</p>
-          <p>彼のことばっか考えてたのに、りりに視てもらって「あ、私まだ動いていいんだ」って思えた。LINEの送り方変えたら空気ちょっとずつ変わってきた💋</p>
+          <p>彼のことが頭から離れなくて、毎日モヤモヤしていました。りりさんに視ていただいたら、「あ、私まだ動いていいんだ」ってスッと気持ちが楽になって。教えていただいたLINEの送り方を変えてみたら、彼との空気がちょっとずつ変わってきました。勇気を出して相談して本当によかったです🥺✨</p>
         </article>
         <article class="voice-card">
           <div class="initial">M</div>
-          <p class="voice-meta"><strong>M.S さん</strong> · 30代</p>
+          <p class="voice-meta"><strong>Mさん</strong> · 30代</p>
           <p class="stars">★★★★★</p>
-          <p>片思い長すぎて心折れかけてた。焦らなくていいタイミングの話、刺さった。占い初めてだったけど丁寧で安心した🌹</p>
+          <p>片思いが長くなりすぎて、正直もう諦めようかと思っていました。りりさんに「今は焦らなくていいタイミング」と教えていただいて、初めて心が落ち着きました。占いは今回が初めてでしたが、りりさんがとても丁寧に話を聞いてくださったので、安心してぜんぶ打ち明けられました😌🌸</p>
         </article>
         <article class="voice-card">
           <div class="initial">R</div>
-          <p class="voice-meta"><strong>R.Y さん</strong> · 30代</p>
+          <p class="voice-meta"><strong>Rさん</strong> · 40代</p>
           <p class="stars">★★★★★</p>
-          <p>深層本鑑定で彼の本音っぽいところと、私が沼らせ側に立つイメージがはっきりした。優先順位つけられたのデカい。</p>
+          <p>深層本鑑定を受けました。彼の本音に近いところまで視ていただけて、自分が沼らせる側に立てるイメージが初めてはっきりしました。「次に何をすればいいか」の優先順位がわかったことで、迷いがなくなりました。もっと早く相談すればよかったと思っています。りりさん、ありがとうございました🙏💕</p>
         </article>
       </div>
       <p class="voice-hint">← スワイプでつづき</p>
@@ -1000,18 +1026,19 @@
       <div class="plans-grid">
         <article class="plan-card">
           <span class="badge">初回限定</span>
-          <p class="plan-label">③</p>
-          <h3>お試し本鑑定🌹</h3>
+          <p class="plan-label">①</p>
+          <h3>【初回限定】お試し本鑑定🌹</h3>
           <p class="price"><s>9,800円</s>2,980円</p>
           <ul>
             <li>彼が今、あなたをどう思っているか</li>
             <li>2人の関係の今の流れ</li>
           </ul>
           <div class="plan-for">
-            <strong>こんな子に</strong>
-            占い初めて · まず流れだけ知りたい
+            <strong>こんな方へ</strong>
+            →占いが初めてで不安な人<br>
+            →まずはじめにこの恋の流れを確認したい人向け
           </div>
-          <p class="plan-line"><a href="https://lin.ee/Ws8t7oB" target="_blank" rel="noopener noreferrer">LINEで③を申し込む →</a></p>
+          <p class="plan-line"><a href="https://lin.ee/Ws8t7oB" target="_blank" rel="noopener noreferrer">LINEで①を申し込む →</a></p>
         </article>
 
         <article class="plan-card featured">
@@ -1020,18 +1047,19 @@
           <h3>本鑑定🌹</h3>
           <p class="price"><s>15,000円</s>4,980円</p>
           <ul>
-            <li>彼が今、あなたをどう思っているか</li>
+            <li>彼が今 あなたをどう思っているか</li>
             <li>2人の関係の今の流れ</li>
           </ul>
           <div class="plan-for">
-            <strong>こんな子に</strong>
-            今の彼の気持ちを深く知りたい · 動く前に視ておきたい
+            <strong>こんな方へ</strong>
+            →とにかく今の彼の気持ちを知りたい<br>
+            →まず彼のことを知ってから動きたい人向け
           </div>
           <p class="plan-line"><a href="https://lin.ee/Ws8t7oB" target="_blank" rel="noopener noreferrer">LINEで②を申し込む →</a></p>
         </article>
 
         <article class="plan-card">
-          <p class="plan-label">①</p>
+          <p class="plan-label">③</p>
           <h3>深層本鑑定🌹</h3>
           <p class="price"><s>30,000円</s>14,800円</p>
           <ul>
@@ -1040,10 +1068,11 @@
             <li>彼を沼らせるための具体的な行動</li>
           </ul>
           <div class="plan-for">
-            <strong>こんな子に</strong>
-            彼も自分も全部知りたい · 本気でこの恋を変えたい
+            <strong>こんな方へ</strong>
+            →彼の気持ち自分の行動も全部知りたい<br>
+            →本気でこの恋を変えたい人向け
           </div>
-          <p class="plan-line"><a href="https://lin.ee/Ws8t7oB" target="_blank" rel="noopener noreferrer">LINEで①を申し込む →</a></p>
+          <p class="plan-line"><a href="https://lin.ee/Ws8t7oB" target="_blank" rel="noopener noreferrer">LINEで③を申し込む →</a></p>
         </article>
       </div>
 
